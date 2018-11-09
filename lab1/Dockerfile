@@ -2,11 +2,10 @@ FROM node
 
 COPY . /app
 
-RUN cd /app && \ 
-    npm install
-
 WORKDIR /app
+
+RUN npm install
 
 EXPOSE 3000
 
-CMD [ "node","run","index.js" ]
+CMD [ "node","index.js" ]

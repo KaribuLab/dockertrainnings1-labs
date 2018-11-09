@@ -1,13 +1,13 @@
 version: "3"
 
-service:
+services:
   app:
     build:
-      context: '../app'
-    environtment:
-      - DBHOST = 'db'
+      context: './app'
+    environment:
+      - DBHOST=db
     ports:
-      - 3000: 3000
+      - 3000:3000
   db:
     image: mongo:3.6
     ports:

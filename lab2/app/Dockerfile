@@ -4,8 +4,9 @@ COPY . /app
 
 WORKDIR /app
 
-RUN npm install
+RUN npm install -g pm2 && \
+    npm install
 
 EXPOSE 3000
 
-CMD [ "node","index.js" ]
+CMD [ "pm2","start","index.js","--no-daemon" ]

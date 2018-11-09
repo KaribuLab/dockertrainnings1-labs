@@ -1,7 +1,11 @@
 FROM node
 
+COPY . /app
 
+WORKDIR /app
 
-ENV PATH=${PATH}:/app/bin
+RUN npm install
 
-CMD [ "/app/bin" ]
+EXPOSE 3000
+
+CMD [ "node","index.js" ]

@@ -1,0 +1,36 @@
+Arguments: 
+  /home/patricio/.nvm/versions/node/v8.11.2/bin/node /usr/bin/yarn init
+
+PATH: 
+  /home/patricio/Aplicaciones/Android/sdk/tools/bin:/home/patricio/Aplicaciones/Android/sdk/platform-tools:/home/patricio/Aplicaciones/Android/sdk/build-tools/27.0.3:/home/patricio/.config/yarn/global/node_modules/.bin:/home/patricio/.nvm/versions/node/v8.11.2/bin:/home/patricio/.sdkman/candidates/springboot/current/bin:/home/patricio/.sdkman/candidates/maven/current/bin:/home/patricio/.sdkman/candidates/grails/current/bin:/home/patricio/.sdkman/candidates/gradle/current/bin:/home/patricio/Aplicaciones/Android/sdk/tools/bin:/home/patricio/Aplicaciones/Android/sdk/platform-tools:/home/patricio/Aplicaciones/Android/sdk/build-tools/27.0.3:/home/patricio/.config/yarn/global/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/go/bin:/home/patricio/golang/bin:/usr/lib/go/bin:/home/patricio/golang/bin
+
+Yarn version: 
+  1.12.1
+
+Node version: 
+  8.11.2
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:120807:13)
+      at emitNone (events.js:106:13)
+      at Interface.emit (events.js:208:7)
+      at Interface._ttyWrite (readline.js:774:16)
+      at ReadStream.onkeypress (readline.js:158:10)
+      at emitTwo (events.js:126:13)
+      at ReadStream.emit (events.js:214:7)
+      at emitKeys (internal/readline.js:420:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1010:36)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,9 @@
+{
+  "name": "lab2",
+  "version": "1.0.0",
+  "description": "Proyecto de ejemplo para laboratorio 2 de Docker",
+  "main": "index.js",
+  "author": "paascencio@gmail.com",
+  "license": "MIT",
+  "private": false
+}

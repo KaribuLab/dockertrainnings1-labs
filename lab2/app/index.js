@@ -1,10 +1,21 @@
 const express = require('express');
-const Todo = require('./todo')();
+const mongoose = require('mongoose');
+const connection = require('./connection')(mongoose);
+const healthcheck = require('./healthcheck')(connection);
+const Todo = require('./todo')(mongoose);
+
+connection.open();
 
 const app = express();
 
 
 app.use(express.json());
+app.get('/healthcheck', (req, res) => {
+    const status = healthcheck.status();
+    let code = status.healthy !== true ? 503 : 200;
+    res.status(code).json(status);
+});
+
 app.post('/', (req, res) => {
 
     todo = new Todo({

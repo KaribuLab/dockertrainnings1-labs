@@ -1,7 +1,9 @@
+const os = require('os');
 module.exports = (connection) => {
     return {
         status() {
             let health = {
+                hostname: os.hostname(),
                 healthy: true,
             };
 

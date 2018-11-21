@@ -23,6 +23,9 @@ app.post('/', (req, res) => {
         priotiry: req.body.priotiry,
     });
 
+    console.log('Creando todo: ', JSON.stringify(todo));
+
+
     todo.save((err, todo) => {
         if (err) {
             res.sendStatus(400);
@@ -36,6 +39,8 @@ app.post('/', (req, res) => {
 });
 
 app.get('/:id', (req, res) => {
+    console.log('Buscando todo por id: ', req.params.id);
+
     Todo.findById(req.params.id, function (err, todo) {
         if (err) {
             res.sendStatus(400);
@@ -43,6 +48,7 @@ app.get('/:id', (req, res) => {
                 error: err,
             });
         } else {
+            console.log('Retornando todo: ', JSON.stringify(todo));
             res.json(todo);
         }
     });
@@ -56,6 +62,7 @@ app.get('/', (req, res) => {
                 error: err,
             });
         } else {
+            console.log('Retornando todos: ', JSON.stringify(todos));
             res.json(todos);
         }
     });
